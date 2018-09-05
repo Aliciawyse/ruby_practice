@@ -18,5 +18,5 @@ champ = GoodDog.new("Champ", 2)
 puts champ.name
 puts champ.age
 puts champ
-p champ #using p is helpful for debugging.
+p champ #using p is helpful for debugging. It calls a built-in Ruby instance method called `inspect`. 
 puts champ.inspect #this line of code is equivalent to the one above.
