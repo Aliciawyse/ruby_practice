@@ -2,7 +2,7 @@ class Animal
     attr_accessor :name
 
     def initialize(name)
-        @name = name 
+        @name = name
     end
 
     def speak
@@ -24,9 +24,19 @@ class GoodDog < Animal
     end
 end
 
+class BadDog < Animal
+    def initialize(age, name)
+        super(name)
+        @age = age
+    end
+end
+
+
 champ = GoodDog.new("black")
 p champ.speak
 
 newbie = GoodDog.new("brown")
 
 p newbie # => #<GoodDog:0x00007fb346102290 @name="brown", @color="brown">
+
+p BadDog.new(3, "frankie")
