@@ -1,9 +1,4 @@
-# Create a module
-
-# It should mix in to ONE of your subclasses 
-
-# It should describe behavior unique to that subclass.
-
+# Print to the screen your method lookup for the classes that you have created.
 
 class Vehicle
     @@objects_created = 0
@@ -67,14 +62,25 @@ class MyTruck < Vehicle
     SIX_WHEEL_DRIVE = 6
 end 
 
+puts Vehicle.ancestors
+# Vehicle
+# Object
+# Kernel
+# BasicObject
 
 
-alicias_car = MyCar.new("2018", "Black", "Corolla")
+puts MyCar.ancestors
+# MyCar
+# Insurable
+# Vehicle
+# Object
+# Kernel
+# BasicObject
 
-gails_truck = MyTruck.new("2019", "Blue", "Sierra")
+puts MyTruck.ancestors
+# MyTruck
+# Vehicle
+# Object
+# Kernel
+# BasicObject
 
-future_truck = MyTruck.new("2020", "Red", "Sierra")
-
-puts Vehicle.times_object_called
-
-puts alicias_car.insured
