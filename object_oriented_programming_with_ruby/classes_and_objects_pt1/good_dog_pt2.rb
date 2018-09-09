@@ -18,7 +18,7 @@ class GoodDog
     end
 
     def info
-        "#{name} weighs #{weight} and is #{height} tall."
+        "#{name} weighs #{weight} and is #{height} tall." #for consistency do this #{self.name}
     end
 
 end
