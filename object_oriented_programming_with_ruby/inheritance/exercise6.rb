@@ -69,7 +69,6 @@ class MyCar < Vehicle
     attr_reader :year
 
     include Insurable
- 
 end
 
 class MyTruck < Vehicle
