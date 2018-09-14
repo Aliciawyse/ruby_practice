@@ -3,3 +3,14 @@
 arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
 
 # Then recreate the arr and get rid of all of the words that start with "s" or starts with "w".
+
+#arr.delete_if {|word| word.start_with?("s")}
+arr.delete_if {|word| word.start_with?("s", "w")}
+
+#Don't do this. This is not DRY code. 
+#arr.delete_if {|word| word.start_with?("s") || word.start_with?("w")}
+
+p arr
+    
+
+
